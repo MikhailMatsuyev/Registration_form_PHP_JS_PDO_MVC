@@ -1,0 +1,21 @@
+        <title><?=tmpl_user_profile ?></title>
+    </head>
+    <body>
+        <div class="cl_user_panel">
+        
+        <a href="<?="http://".$_SERVER['HTTP_HOST']."/userpanel/ru/"?>">ru</a>
+        |
+        <a href="<?="http://".$_SERVER['HTTP_HOST']."/userpanel/en/"?>">en</a> 
+        
+        <span style="margin-left:50px;"><a href="<?="http://".$_SERVER['HTTP_HOST']."/userpanel/".$Lang."/logout"?>">logout</a></span>
+        <h2><?=tmpl_user_profile ?></h2>
+        <p><?=tmpl_Name ?>:          <span><?=htmlspecialchars($data["name_user"])       ?></span></p>
+        <p><?=tmpl_Surname ?>:       <span><?=htmlspecialchars($data["surname_user"])    ?></span></p>
+        <p><?=tmpl_Login_in_user_profile ?>:<span><?=htmlspecialchars($data["login"])   ?></span></p>
+        <p><?=tmpl_Date_of_Birth ?>: <span><?=$data["birth_date"] ?></span></p>
+        <p><?=tmpl_Mobile_Number ?>: <span><?=$data["phone_number"]  ?></span></p>
+        
+        <div>
+            <img src=../../application/avatars/<?=$data["avatar"]?$data["avatar"]:"default.jpg" ?>>  
+        </div>
+    

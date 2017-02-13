@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,cyrillic);
+body{
+	font-size:14px;
+	font-family: 'Roboto', 'myriad', 'Arial', sans-serif;
+}
+
+h2{
+	text-align: center;
+}
+label,h3 {
+	margin-left:20px;
+}
+
+h3 {
+	margin-left:20px;
+	text-align:center;
+}
+
+p{
+	padding:0;
+	height:55px;
+	border:0;
+	vertical-align:middle;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.cl_input_name:focus{
+	box-shadow:0 0 8px rgba(81,140,245,.5);
+}
+.cl_label_name{
+	display:inline-block;
+	width:150px;
+}
+.cl_form{
+	width:780px;
+	background-color:gray;
+	height:650px;
+	box-shadow: 1px 1px 4px rgba(164,164,164,0.75);
+    position:absolute;
+	left:50%;
+	top:50%;
+	margin:-275px 0 0 -390px;
+}
+
+.cl_user_panel{
+    width:380px;
+    background-color:gray;
+    height:350px;
+    box-shadow: 1px 1px 4px rgba(164,164,164,0.75);
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-175px 0 0 -190px;
+}
+.cl_404{
+    width:380px;
+    background-color:gray;
+    height:350px;
+    box-shadow: 1px 1px 4px rgba(164,164,164,0.75);
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-175px 0 0 -190px;
+}
+
+
+.cl_label_surname{
+	display:inline-block;
+	width:150px;
+}
+
+.cl_label_daypicker{
+	display:inline-block;
+	width:150px;
+}
+
+.cl_label_phonecodepicker{
+	display:inline-block;
+	width:150px;
+}
+
+.cl_error_mess{
+	width:680px;
+	height:20px;
+	color:red;
+	margin-left:20px;
+	
+}
+
+.cl_label_password{
+	display:inline-block;
+	width:150px;
+}
+
+.cl_label_password_re{
+	display:inline-block;
+	width:150px;
+}
+#id_input_phone_number{ /* стиль указан через id, т.к. в классе не устанавлив-ся ширина инпута,  id его как бы переопределяет */
+	display:inline-block;
+	width:90px;
+}
+
+#id_span_login{
+	display:inline-block;
+	width:400px;
+	
+	overflow: hidden;
+	vertical-align: middle;
+
+}
+
+#id_input_login{
+	vertical-align:middle;
+	display:inline-block;
+}				
+
+.spanvmiddle
+{
+   display:inline-block;
+   height:100%;
+   width:0px;
+   overflow:hidden;
+   vertical-align:middle;
+   
+}
+
+.cl_label_login{
+	display:inline-block;
+	width:150px;
+	vertical-align: middle;
+}
+
+.cl_lang{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+
+.cl_btn_reg{
+	margin-left: auto;
+    margin-right: auto; 
+	width:150px;
+	display:block;
+	height:22px;
+}
+.cl_h2_in_user_panel{
+	margin:20px auto;
+	width:250px;
+	
+}
+
+.cl_user_panel p{
+	margin-left:10px;
+	font-weight:bold;
+	height:20px;
+}
+
+.cl_user_panel p span{
+
+	font-weight:normal;
+}
+
+.cl_user_panel div img{
+	width:100px;
+	margin: 0 auto;
+}
+
+.cl_user_panel div {
+
+	width:100px;
+	margin: 0 auto;
+}
+
+
+.cl_span_name_error { border-color: red; }
+
+.cl_phone_number_error{ border-color: red; }
+
+.cl_name_error{ border-color: red; }
+
+.cl_surname_error{ border-color: red; }
+
+.cl_login_error{ border-color: red; }
+
+.cl_psw_error { border-color: red; }
+
+.cl_re_psw_error { border-color: red; }
+
+label.uploadbutton {
+    border-radius: 2px;  
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+	margin-top:10px;
+}
+
+label.uploadbutton input {
+    display: none;   
+}
+
+label.uploadbutton .button {
+	height: 20px;
+    width: 100px;
+    text-align: center;
+    background: gray;
+    transition: background 0.2s;
+    outline: 1px solid rgba(0,0,0,0.1);
+    color: #fff;
+    display: inline-block;
+	vertical-align:top;
+}
+label.uploadbutton:hover .button {
+ 
+}
+
+label.uploadbutton .input {
+	overflow: hidden;
+	height: 20px;
+    margin-left:50px;
+	width: 500px;
+    display: inline-block;
+}
+
+.cl_error_msg_reg_new_user{
+	display:block;
+	color:red;
+	margin-left:20px;
+}

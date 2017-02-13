@@ -1,0 +1,14 @@
+DefaultLanguage ru
+AddDefaultCharset utf-8
+php_value default_charset "utf-8"
+
+#Запрет просмотра содержания папок на сервере
+Options -Indexes
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php
