@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS `table_users` (
   `birth_date` date NOT NULL,
   `phone_number` varchar(15) NOT NULL,
   `login` varchar(20) NOT NULL,
-  `psw` varchar(32) NOT NULL,
-  `avatar` varchar(50) NOT NULL,
+  `psw` varchar(60) NOT NULL,
+  `avatar` varchar(32) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `login` (`login`),
   KEY `login_2` (`login`)
